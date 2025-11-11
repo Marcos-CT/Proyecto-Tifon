@@ -1,0 +1,82 @@
+# === Python básico ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Distribución / empaquetado
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Entornos virtuales (locales)
+.venv/
+venv/
+env/
+ENV/
+
+# Herramientas/analizadores
+.mypy_cache/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.pyre/
+.pytype/
+.ruff_cache/
+.pylint.d/
+
+# === Jupyter / Colab ===
+.ipynb_checkpoints/
+# Salidas automáticas pesadas (opcional):
+# *.nbconvert.ipynb
+
+# === Datos y resultados (mantén solo 'sample' y README) ===
+data/**
+!data/.gitkeep
+!data/README.md
+!data/sample/**
+!data/samples/**
+
+# Resultados/artefactos
+outputs/**
+!outputs/.gitkeep
+models/**
+!models/.gitkeep
+logs/**
+!logs/.gitkeep
+
+# Formatos de datos comunes (por si alguien los deja fuera de /data)
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.joblib
+*.pkl
+*.pickle
+*.npz
+*.npy
+
+# Credenciales y config sensible
+.env
+.env.*
+*.env
+*.ini
+*.cfg
+token.json
+credentials.json
+service_account.json
+
+# SO / editores
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+.history/
